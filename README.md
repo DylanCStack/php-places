@@ -10,11 +10,11 @@ Oh, the places you'll be!
 
 ## Setup
 
-Set project root as working directory in CLI.
-Run `$ composer install --prefer-source --no-interaction`.
-Run `$ cd web`.
-Run `$ php -S localhost:8000`.
-Visit **`localhost:8000`** in web browser.
+1. Set project root as working directory in CLI.
+2. Run `$ composer install --prefer-source --no-interaction`.
+3. Run `$ cd web`.
+4. Run `$ php -S localhost:8000`.
+5. Visit **`localhost:8000`** in web browser.
 
 ## Technologies Used
 
