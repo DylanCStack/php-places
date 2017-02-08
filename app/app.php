@@ -19,7 +19,7 @@
     });
 
     $app->post('/places', function() use ($app) {
-        $place = new Place($_POST['name'], '', '');
+        $place = new Place($_POST['name'], $_POST['picture'], $_POST['duration']);
         $place->save();
         return $app['twig']->render('create_place.html.twig', array( 'newplace' => $place ));
     });

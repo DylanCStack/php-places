@@ -16,6 +16,14 @@
         {
             return $this->name;
         }
+        function getImage()
+        {
+            return $this->image_path;
+        }
+        function getDuration()
+        {
+            return $this->stay_duration;
+        }
 
         function save()
         {
