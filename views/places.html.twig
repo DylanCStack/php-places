@@ -4,6 +4,25 @@
         <title>Place</title>
     </head>
     <body>
-        <p>Sample root page</p>
+        <h1>Oh the places you've been (to)!</h1>
+
+        {% if places is not empty %}
+            <p>Here is where you have been:</p>
+            <ul>
+                {% for place in places %}
+                    <li>{{ place.getName }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <form action='/places' method='post'>
+            <label for='name'>Name</label>
+            <input id='name' name='name' type='text'>
+
+            <button type='submit'>Add place</button>
+        </form>
+        <form action='/delete_places' method='post'>
+            <button type='submit'>Clear</button>
+        </form>
     </body>
 </html>
